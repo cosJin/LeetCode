@@ -22,7 +22,7 @@ class Solution:
         if j==-1:pass
         elif i==-1:
             nums1[0:position+1]=nums2[0:j+1]
-        
+        return nums1
         
 test=Solution()
 print(test.merge([1,2,3,0,0,0],3,[2,5,6],3))
