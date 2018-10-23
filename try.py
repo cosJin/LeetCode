@@ -1,4 +1,3 @@
-a=[0,0,1]
-a.remove(0)
-a=range(1,6)
-print(list(a))
+result = 3
+result -= 2
+print(result)
