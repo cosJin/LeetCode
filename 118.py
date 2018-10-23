@@ -5,7 +5,7 @@ class Solution:
         :type numRows: int
         :rtype: List[List[int]]
         """
-        if numRows==1: return [[1]
+        if numRows==1: return [[1]]
         elif numRows==2: return [[1],[1,1]]
         elif numRows==0: return []
         else:
