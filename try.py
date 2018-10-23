@@ -1,3 +1,4 @@
-result = 3
-result -= 2
-print(result)
+result = 'askdjflkaskdfj'
+for i in range(len(result)-1):
+    print(i)
+    print(result[-2:])
