@@ -5,6 +5,7 @@ class Solution:
         :rtype: str
         """
         if strs==[]:return ""
+        elif "" in strs: return ""
         elif len(strs)==1:return strs[0]
         prefix = ""
         for i in range(len(strs[0])):
@@ -17,5 +18,6 @@ class Solution:
                     if i==-1:
                         return ""
                     else: return strs[0][0:i+1]
+            if i == len(strs[0])-1:return strs[0]
 test = Solution()
-print(test.longestCommonPrefix(["f3","f3","f3"]))
+print(test.longestCommonPrefix(["f","f","f"]))
