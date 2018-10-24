@@ -1,2 +1,2 @@
-result = 'askdjflkaskdfj'
-print(result[0:1])
+result = ''
+print(len(result.split()))
