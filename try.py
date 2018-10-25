@@ -1,4 +1,3 @@
-result = '123456'
-result = list(result)
-vowel = set("aeiouAEIOU")
-print(vowel)
+q = [1,3,2]
+p = [1,2,3]
+print(q == p)
