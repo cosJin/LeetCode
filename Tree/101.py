@@ -12,11 +12,7 @@ class Solution:
         :rtype: bool
         """
         if root is None:return True
-        zzy = []
-        yzz = []
-        zzy = self.zzy(root.left)
-        yzz = self.yzz(root.right)
-        return zzy == yzz
+        return self.zzy(root.left) == self.yzz(root.right)
 
     def zzy(self,root):
         result = []
