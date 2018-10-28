@@ -1,3 +1,3 @@
-q = [1,3,2]
-p = [1,2,3]
-print(q == p)
+a = [None,None]
+if a is None:
+    print(333333)
