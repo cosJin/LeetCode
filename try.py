@@ -1,3 +1,4 @@
-a = [None,None]
-if a is None:
-    print(333333)
+a = []
+b = [['d','e','f']]
+b.append('d')
+print(b)
