@@ -18,7 +18,7 @@ class Solution:
                 result.append(parentPath+str(root.val))
             if root.left:
                 path(root.left,parentPath+str(root.val)+"->")
-            if root.right
+            if root.right:
                 path(root.right,parentPath+str(root.val)+"->")
         path(root,"")
         return result
@@ -30,18 +30,16 @@ class Solution2:
         :type root: TreeNode
         :rtype: List[str]
         """
-        parentPath = []
-        return self.allPath(root,parentPath)
+        return self.allPath(root,[])
 
     def allPath(self,tree,parentPath):
         pathList = []
         if tree.left is None and tree.right is None:
-            path = parentPath.append(tree.val)   #[1,2,4]
-            pathList.append(path)                #[[1,2,4]]
+            path = parentPath+[tree.val]   
+            # path = parentPath.append(tree.val)   #这样就不可以运行，因为就改变了传入的参数，所以不要轻易改变传入参数。   
+            pathList.append(path)          
         if tree.left:
-            parentPath.append(tree.val)
-            pathList += self.allPath(tree.left,parentPath)
+            pathList += self.allPath(tree.left,parentPath+[tree.val])
         if tree.right:
-            parentPath.append(tree.val)
-            pathList += self.allPath(tree.right,parentPath)
+            pathList += self.allPath(tree.right,parentPath+[tree.val])
         return pathList
