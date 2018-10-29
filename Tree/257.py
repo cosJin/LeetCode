@@ -17,8 +17,8 @@ class Solution:
     def allPath(self,tree,parentPath):
         pathList = []
         if tree.left is None and tree.right is None:
-            path = parentPath.append(tree.val)   #[1,2,4]
-            pathList.append(path)                #[[1,2,4]]
+            path = parentPath.append(tree.val)  
+            pathList.append(path)               
         if tree.left:
             parentPath.append(tree.val)
             pathList += self.allPath(tree.left,parentPath)
