@@ -1,4 +1,5 @@
 a = 2
+b = 0
 def add(aa,bb):
     b = aa+bb
     return b
