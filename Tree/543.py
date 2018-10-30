@@ -11,18 +11,15 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
-        longest = 0
-        if root is None:return 0
-        if not root.left and not root.right: return 0
-        longestFromNode = self.maxDepth(root.left) + self.maxDepth(root.right)
-        longest = max(longest,longestFromNode,self.diameterOfBinaryTree(root.left),self.diameterOfBinaryTree(root.right))
-        return longest
-        
-    def maxDepth(self,root):
-        if root is None: return 0
-        left = self.maxDepth(root.left)
-        right = self.maxDepth(root.right)
-        return max(left,right)+1
+        self.longest = 0
+        def maxDepth(root):
+            if root is None: return 0
+            left = maxDepth(root.left)
+            right = maxDepth(root.right)
+            self.longest = max(self.longest,left + right)
+            return max(left,right)+1
+        maxDepth(root)
+        return self.longest
 
     # def maxDepth(self,root):
     #     if root is None:return 0
