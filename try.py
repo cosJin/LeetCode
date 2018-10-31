@@ -1,9 +1,5 @@
-a = 2
-b = 0
-def add(aa,bb):
-    b = aa+bb
-    return b
-
-print(add(a,b))
-print(a)
-print(b)
+a = [3,4,4]
+b = [0,1,2]
+dic = {1:3,1:4,4:2,3:2}
+dic[5] = 2
+print(dic)
