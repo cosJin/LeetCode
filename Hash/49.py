@@ -4,16 +4,18 @@ class Solution:
         :type strs: List[str]
         :rtype: List[List[str]]
         """
+        if strs == []: return []
         dic = {}
         for word in strs:
-            key = "".join(sorted(list(word)))
+            wordList = list(word)
+            wordList.sort()
+            key = "".join(wordList)
             if key in dic:
                 dic[key].append(word)
 
             else:
                 dic[key] = [word]
-            a = list(dic.values())
-        return a
+        return list(dic.values())
 
 test = Solution()
 print(test.groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
