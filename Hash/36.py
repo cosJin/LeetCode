@@ -4,9 +4,9 @@ class Solution:
         :type board: List[List[str]]
         :rtype: bool
         """
-        row = [{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}]*9
-        col = [{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}]*9
-        grid = [[{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}]*3]*3
+        row = [{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}for _ in range(9)]
+        col = [{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}for _ in range(9)]
+        grid = [[{1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}for _ in range(3)]for _ in range(9)]
         for i in range(9):
             for j in range(9):
                 if board[i][j] == ".":continue
