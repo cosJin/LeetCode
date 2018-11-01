@@ -4,4 +4,16 @@ class Solution:
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        #每串字符串的set作为key,value为字符串的列表。
+        dic = {}
+        for word in strs:
+            key = "".join(sorted(list(word)))
+            if key in dic:
+                dic[key].append(word)
+
+            else:
+                dic[key] = [word]
+            a = list(dic.values())
+        return a
+
+test = Solution()
+print(test.groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
