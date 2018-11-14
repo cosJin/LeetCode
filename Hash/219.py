@@ -9,12 +9,11 @@ class Solution(object):
         if len(set(nums)) == len(nums):
             return False
         for i in range(len(nums)):
-            try :
-                dic[nums[i]]
+            if nums[i] in dic.keys():
                 if i-dic[nums[i]]<=k:
                     return True
                 else: dic[nums[i]] = i
-            except:dic[nums[i]] = i
+            else:dic[nums[i]] = i
         return False
 test = Solution()
 print(test.containsNearbyDuplicate([1,2,3,1,2,3],2))
