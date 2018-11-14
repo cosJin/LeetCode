@@ -10,7 +10,7 @@ class Solution(object):
         #         if key%i == 0 and key/i!=1:
         #             del dic[key]
         # return list(dic.values()).count(1)
-        # # l = list(range(n))[2:]
+        # l = list(range(n))[2:]
         # for i in range(int(n**0.5)+1)[2:]:
         #     for element in l:
         #         if element%i == 0 and element/i!=1:
@@ -21,7 +21,7 @@ class Solution(object):
         l[0] = False
         l[-1] = False
         for i in range(int(n**0.5)+1)[2:]:
-            l[2*i-1:-1:i] = [False]*(len(l[2*i-1:-1:i]))
+            l[i*i-1:-1:i] = [False]*(len(l[i*i-1:-1:i]))
         return l.count(True)
         # return l
 
