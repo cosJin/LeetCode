@@ -1,3 +1,6 @@
-i = {2:4,4:5}
-if:print(4)
-print(i)
+n = 24
+d = list(range(n)[2:])
+a = list(range(22))
+dic = dict(zip(d,a))
+a = list(dic.keys())
+print(a.count(3))
