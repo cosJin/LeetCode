@@ -1,7 +1,6 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str):
         dic1  = {}
-        dic2  = {}
         if len(s) != len(t):
             return False
         else:
@@ -10,11 +9,7 @@ class Solution:
                     dic1[s[i]] = t[i]
                 elif dic1[s[i]] != t[i]:
                     return False
-                if t[i] not in dic2.keys():
-                    dic2[t[i]] = s[i]
-                elif dic2[t[i]] != s[i]:
-                    return False
-            return True
+            return False if len(dic1.values()) != len(set(dic1.values())) else True
 
 
 
