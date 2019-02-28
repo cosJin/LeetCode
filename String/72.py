@@ -17,3 +17,8 @@ class Solution:
                 else:
                     dp[i][j] = min(dp[i-1][j-1]+1,dp[i-1][j]+1,dp[i][j-1]+1)
         return dp[-1][-1]
+test = Solution()
+
+a = ['民心','將','移','乃','難','親']
+b = ['民心','將','移乃','難','親']
+print(test.minDistance(a,b)) #用较多的长度减去错误长度就是对的个数
