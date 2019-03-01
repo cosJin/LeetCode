@@ -1,1 +1,3 @@
-print('a'+1)
+a = b = 3
+a = a+3
+print(b)
