@@ -27,6 +27,8 @@ class Solution:
         if stack == []:
             return True
         else:return False
+
+            #用字典匹配，使代码简洁
     def isValid(self, s):
         stack = []
         paren_map = {')':'(',']':'[','}':'{',}
@@ -36,6 +38,15 @@ class Solution:
             elif not stack or paren_map[c] != stack.pop()
                 return False
         return not stack
+
+        #提供了一个思路，脑回路新奇
+    def isValid(self,s):
+        do{
+            length = len(s)
+            s = s.replace("()","").replace("[]","").replace("{}","")
+        }while length != len(s)
+        return len(s) == 0
+
 
 test = Solution()
 print(test.isValid("()"))
