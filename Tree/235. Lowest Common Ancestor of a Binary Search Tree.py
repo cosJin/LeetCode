@@ -19,3 +19,9 @@ class Solution:
             lca = self.lowestCommonAncestor(root.left,p,q)
         else:lca = root
         return lca
+
+        if q.val > root.val and p.val > root.val:
+            return self.lowestCommonAncestor(root.right,p,q)
+        elif q.val < root.val and p.val < root.val:
+            return self.lowestCommonAncestor(root.left,p,q)
+        else:return root
