@@ -1,5 +1,2 @@
-node = {"a":23}
-word = "apple"
-
-node.setdefault("b",3)
-print(node)
+for i in range(10,-1,-1)[1:]:
+    print(i)
