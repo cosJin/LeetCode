@@ -1,7 +1,7 @@
 #
-# @lc app=leetcode.cn id=144 lang=python
+# @lc app=leetcode.cn id=94 lang=python
 #
-# [144] 二叉树的前序遍历
+# [94] 二叉树的中序遍历
 #
 
 # @lc code=start
@@ -12,11 +12,16 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def preorderTraversal(self, root):
+    def inorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
-        
+        res = []
+        if root is not None:
+            res += self.inorderTraversal(root.left)
+            res.append(root.val)
+            res += self.inorderTraversal(root.right)
+        return res
 # @lc code=end
 

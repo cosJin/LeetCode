@@ -19,6 +19,11 @@ class Solution(object):
         :type root: Node
         :rtype: List[int]
         """
-        
+        res = []
+        if root is not None:
+            for node in root.children:
+                res += self.postorder(node)
+            res.append(root.val)
+        return res
 # @lc code=end
 
