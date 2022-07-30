@@ -17,6 +17,18 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        
+        if root is None:return []
+        queue = [[root]]
+        res = []
+        for lv in queue:
+            if lv != []:
+                a = [n.val for n in lv]
+                queue.append([])
+                res.append(max(a))
+                for nd in lv:
+
+                    if nd.left is not None: queue[-1].append(nd.left)
+                    if nd.right is not None: queue[-1].append(nd.right)
+        return res
 # @lc code=end
 
