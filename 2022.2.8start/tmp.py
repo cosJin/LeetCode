@@ -3,11 +3,6 @@
 # a.add((1,2))
 
 # print(len(a))
-
-from collections import deque   
-q = deque([(1,2)])
-
-q.append((2,3))
-
-q.append((2,3))
-print(q)
+a = [1,1,2]
+a.remove(1)
+print(a)

@@ -12,5 +12,6 @@ class Solution(object):
         :type click: List[int]
         :rtype: List[List[str]]
         """
+        
 # @lc code=end
 
