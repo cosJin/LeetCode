@@ -35,7 +35,7 @@ class Solution(object):
         farthest = 0
         for i in range(len(nums)-1):
             farthest = max(farthest, i+nums[i]) #最远能到的位置
-            if i == cur:
+            if i == cur: #最远距离之内，都是同一步。都是能到最远距离这步最优。
                 result += 1
                 cur = farthest
         return result
