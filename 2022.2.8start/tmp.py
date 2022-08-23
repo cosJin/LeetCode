@@ -6,3 +6,5 @@
 a = [1,1,2]
 a.remove(1)
 print(a)
+for k in range(1,6):
+    print(k)
