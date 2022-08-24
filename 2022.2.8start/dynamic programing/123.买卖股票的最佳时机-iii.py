@@ -25,7 +25,7 @@ class Solution(object):
             ma = max(ma,submax(a)+submax(b))
         return ma
 
-    def maxProfit(self, prices):   #比较优雅和通用，但不好理解
+    def maxProfit(self, prices):   #比较优雅和通用，但不好理解,太过于简单，参考股票4问题188题吧
         
         if not prices:
             return 0   
