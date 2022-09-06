@@ -5,3 +5,7 @@
 friend circles
 numbers of islands
 surrounded regions
+
+implement trie prefix tree
+word search ii
+search suggetion - system design
