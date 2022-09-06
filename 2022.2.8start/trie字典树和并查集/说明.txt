@@ -6,6 +6,6 @@ friend circles
 numbers of islands
 surrounded regions
 
-implement trie prefix tree
-word search ii
-search suggetion - system design
+implement trie prefix tree 208
+word search ii 212
+search suggetion - system design 1268
