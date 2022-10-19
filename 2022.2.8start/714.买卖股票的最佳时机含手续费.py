@@ -13,4 +13,4 @@ class Solution(object):
         :rtype: int
         """
 # @lc code=end
-
+print(Solution().maxProfit([1, 3, 2, 8, 4, 9],2))
