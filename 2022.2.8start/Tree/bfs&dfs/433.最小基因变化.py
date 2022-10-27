@@ -54,7 +54,8 @@ class Solution(object):
                         queue.append((mutation,step+1))
                         
         return -1
-        
+       #还可以双向bfs
+ 
 
 # @lc code=end
 print(Solution().minMutation("AAAAAAAA","CCCCCCCC",["AAAAAAAA","AAAAAAAC","AAAAAACC","AAAAACCC","AAAACCCC","AACACCCC","ACCACCCC","ACCCCCCC","CCCCCCCA","CCCCCCCC"]))

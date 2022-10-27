@@ -58,7 +58,7 @@ class Solution(object):
         #                     wordList.remove(new_word)
         #     queue = next[:]
         # return 0
-
+#还可以双向bfs
 
 # @lc code=end
 print(Solution().ladderLength('hit','cog',["hot","dot","dog","lot","log","cog"]))

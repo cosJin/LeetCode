@@ -62,6 +62,8 @@ class Solution(object):
             now = next
             next = []
         return res
+        #还可以双向bfs
+
 # @lc code=end
 
 print(Solution().findLadders('hit','cog',["hot","dot","dog","lot","log","cog"]))
